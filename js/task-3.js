@@ -1,5 +1,6 @@
 const sortByDescendingFriendCount = users => {
-  return users.sort((a, b) => b.friends.length - a.friends.length); // Сортуємо за кількістю друзів у спадному порядку
+  // Використовуємо метод toSorted() для створення нового відсортованого масиву
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
 };
 
 // Код для перевірки коректності роботи функції
